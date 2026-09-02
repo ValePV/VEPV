@@ -1628,6 +1628,38 @@
                 max-height: calc(94vh - 58px)
             }
         }
+        @media (max-width: 760px) {
+          .project-card {
+            display: flex;
+            flex-direction: column;
+            min-height: 0 !important;
+            background: #101426 !important;
+          }
+        
+          .project-bg {
+            position: relative;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            object-position: top center;
+          }
+        
+          .project-overlay {
+            display: none;
+          }
+        
+          .project-info {
+            width: 100%;
+            padding: 24px 22px 26px;
+            background: #101426;
+          }
+        
+          .project-info p {
+            display: block;
+            overflow: visible;
+          }
+        }
     </style>
 </head>
 
